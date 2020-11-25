@@ -59,6 +59,6 @@ IR A LA CARPETA DOCUMENTACIÓN DENTRO DE NEURATEC
 Tutorial de elixirschool[^1].
 
 
-Documentacion generada por [ExDoc](https://github.com/elixir-lang/ex_doc)
+
 
 [^1]: https://elixirschool.com/es/
