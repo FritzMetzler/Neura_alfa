@@ -37,8 +37,15 @@ Limpiar binarios del proyecto
 
 ```zsh
 make clean
-```
 
+```
+Documentación
+---
+
+```zsh
+- Manual de usuario.pdf
+- primera entrega.pdf
+```
 
 
 
