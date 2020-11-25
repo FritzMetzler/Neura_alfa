@@ -11,7 +11,7 @@
 
 ## Clonar repositorio
 ```zsh
-Ejecutar git clone https://github.com/hiphoox/c211-neura.git
+Ejecutar: git clone https://github.com/hiphoox/c211-neura.git
 ```
 
 ## Ejecución
