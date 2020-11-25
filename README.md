@@ -1,21 +1,50 @@
 # Neuratec
 
-**TODO: Add description**
+### Integrantes
 
-## Installation
+-AGUILAR GONZÁLEZ OSCAR
+-CAMPOS RODRÍGUEZ LEONARDO JOSÉ
+-FLORES LICEA LARS ALAIN
+-HERNÁNDEZ JIMÉNEZ DIANA LISSET
+-JORGE ROMERO FERNANDO
+-REYES MARÍN ALEXANDER
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `neuratec` to your list of dependencies in `mix.exs`:
 
-```elixir
-def deps do
-  [
-    {:neuratec, "~> 0.1.0"}
-  ]
-end
+## Ejecución
+
+Ejecutar generar el compilador `neuratec`:
+
+```zsh
+make
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/neuratec](https://hexdocs.pm/neuratec).
+Para probar
+---
 
+```zsh
+./neuratec ./ejemplo/return_2.c
+```
+
+Correr pruebas
+---
+
+```zsh
+mix test
+```
+
+Limpiar binarios del proyecto
+---
+
+```zsh
+make clean
+```
+
+
+
+
+Tutorial de elixirschool[^1].
+
+
+Documentacion generada por [ExDoc](https://github.com/elixir-lang/ex_doc)
+
+[^1]: https://elixirschool.com/es/
