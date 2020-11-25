@@ -47,7 +47,8 @@ Documentación
 ---
 
 ```zsh
-IR A LA CARPETA DOCUMENTACIÓN DENTRO DE NUERATEC
+IR A LA CARPETA DOCUMENTACIÓN DENTRO DE NEURATEC
+
 - Manual_de_usuario.pdf
 - Primera_entrega.pdf
 - CompiladorNueratec.pdf (PLAN DE TRABAJO)
