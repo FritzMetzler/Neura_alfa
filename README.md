@@ -25,7 +25,7 @@ Para probar
 ./neuratec ./ejemplo/return_2.c
 ```
 
-Correr pruebas
+Correr pruebas del test
 ---
 
 ```zsh
