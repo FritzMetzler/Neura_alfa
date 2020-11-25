@@ -43,8 +43,10 @@ Documentación
 ---
 
 ```zsh
-- Manual de usuario.pdf
-- primera entrega.pdf
+IR A LA CARPETA DOCUMENTACIÓN DENTRO DE NUERATEC
+- Manual_de_usuario.pdf
+- Primera_entrega.pdf
+- CompiladorNueratec.pdf (PLAN DE TRABAJO)
 ```
 
 
