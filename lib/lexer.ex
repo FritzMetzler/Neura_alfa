@@ -23,6 +23,8 @@ defmodule Lexer do
           | :open_paren
           | :return_keyword
           | :semicolon
+          | :adding
+          | :sustraction
           | {:constant, integer}
         ]
   def lex_raw_tokens(program) when program != "" do
@@ -42,6 +44,15 @@ defmodule Lexer do
 
         ";" <> rest ->
           {:semicolon, rest}
+
+        #"+" <> rest ->
+        #  {:adding, rest}
+
+        #"-" <> rest ->
+        #  {:sustract, rest}
+
+        #"*" <> rest ->
+        #  {:multi, rest}
 
         "return" <> rest ->
           if "return"<>rest == "return" do

@@ -1,8 +1,8 @@
-defmodule CodeGenerator do
+defmodule CodeGeneratorDiscrete do
   def generate_code(ast) do
     code = post_order(ast)
-    IO.puts("\nASM Code:")
-    IO.puts(code)
+    #IO.puts("\nSalida Generador de codigo:")
+    #IO.puts(code)
     code
   end
 
@@ -44,8 +44,6 @@ defmodule CodeGenerator do
         ret
     """
   end
-  #meter multiplicacion y operaciones basicas
-
 
   def emit_code(:constant, _code_snippet, value) do
     "$#{value}"

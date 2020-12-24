@@ -261,7 +261,7 @@ defmodule LexerTest do
 
   ########### - INTENTO A FALLAR - ######################
   # Existe un ":" en lugar de un ";"
-  test "missclick_point", state do
+  test "missclick point", state do
     code = """
     int main() {
       return 2:
@@ -270,26 +270,27 @@ defmodule LexerTest do
 
     s_code = Sanitizer.sanitize_source(code)
 
-    expected_result = List.update_at(state[:tokens], 2, fn _ -> :error end)
+    expected_result = List.update_at(state[:tokens], 7, fn _ -> :error end)
     assert Lexer.scan_words(s_code) == expected_result
   end
 
 
   # Error de falta de una "i" en la palabra declarada
-  test "Funcion retorna int pero boolean fue detectado", state do
-    code = """
-    int main ( )
-    {return 2.0;}
-    """
+  #test "Funcion retorna int pero boolean fue detectado", state do
+  #  code = """
+  #  int main (){
+  #    return 2.0;
+  #  }
+  #  """
 
-    s_code = Sanitizer.sanitize_source(code)
-    expected_result = List.update_at(state[:tokens], 6, fn _ -> {:constant, 0} end)
-    assert Lexer.scan_words(s_code) == expected_result  end
+  #  s_code = Sanitizer.sanitize_source(code)
+  #  expected_result = List.update_at(state[:tokens], 6, fn _ -> {:constant, 2} end)
+  #  assert Lexer.scan_words(s_code) == expected_result  end
 
   # Realiza un intento en el que se utilizan tabuladores
   test "error_nt", state do
     code = """
-    nt main ( )
+    int main ( )
     {
         return      2
             ;     }
